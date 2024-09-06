@@ -1,0 +1,26 @@
+[package]
+name = "deb-backend"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+argon2 = { version = "0.5.3", features = ["std"] }
+axum = { version = "0.7.5", features = ["macros"] }
+base64 = "0.22.1"
+diesel = { version = "2.2.3", default-features = false, features = ["time", "uuid"] }
+diesel-async = { version = "0.5.0", features = ["async-connection-wrapper", "bb8", "postgres"] }
+diesel_migrations = "2.2.0"
+httpdate = "1.0.3"
+rand = "0.8.5"
+reqwest = { version = "0.12.7", features = ["json"] }
+rsa = { version = "0.9.6", features = ["sha2"] }
+serde = { version = "1.0.209", features = ["derive"] }
+serde_json = "1.0.127"
+sha2 = "0.10.8"
+thiserror = "1.0.63"
+time = { version = "0.3.36", features = ["formatting", "serde"] }
+tokio = { version = "1.39.3", features = ["rt-multi-thread"] }
+toml = "0.8.19"
+tracing = "0.1.40"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+uuid = { version = "1.10.0", features = ["serde", "v7"] }

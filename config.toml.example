@@ -1,0 +1,8 @@
+database_url = "postgres://user:password@host/database"
+bind_addr = "0.0.0.0:3000"
+oci_tenancy_oid = "ocid1.tenancy.oc1..your_tenancy"
+oci_user_oid = "ocid1.user.oc1..your_user"
+oci_cert_fingerprint = "your_certificate_fingerpring"
+oci_cert_path = "path_to_certificate"
+oci_namespace = "os_bucket_namespace"
+oci_bucket = "os_bucket_name"
